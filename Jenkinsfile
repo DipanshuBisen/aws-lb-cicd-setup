@@ -12,7 +12,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/DipanshuBisen/aws-lb-cicd-setup.git'
+                git branch: 'main', url: 'https://github.com/DipanshuBisen/aws-lb-cicd-setup.git'
             }
         }
 
